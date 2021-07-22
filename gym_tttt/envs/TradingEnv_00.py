@@ -3,6 +3,11 @@ import gym
 from gym import spaces
 import numpy as np
 
+"""
+copy of 
+https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e
+"""
+
 MAX_ACCOUNT_BALANCE = 2147483647
 MAX_NUM_SHARES = 2147483647
 MAX_SHARE_PRICE = 5000
@@ -12,12 +17,12 @@ MAX_STEPS = 20000
 INITIAL_ACCOUNT_BALANCE = 10000
 
 
-class StockTradingEnv(gym.Env):
+class TradingEnv_00(gym.Env):
     """A stock trading environment for OpenAI gym"""
     metadata = {'render.modes': ['human']}
 
     def __init__(self, df):
-        super(StockTradingEnv, self).__init__()
+        super(TradingEnv_00, self).__init__()
 
         self.df = df
         self.reward_range = (0, MAX_ACCOUNT_BALANCE)

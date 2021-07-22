@@ -1,4 +1,6 @@
-from gym_tttt.envs.foo_env import FooEnv
-from gym_tttt.envs.test_env import StockTradingEnv
-from gym_tttt.envs.EnvTrading import Env
-from gym_tttt.envs.EnvTrading_ import Env_
+from gym_tttt.envs.TradingEnv_00 import TradingEnv_00
+from gym_tttt.envs.TradingEnv_01 import TradingEnv_01
+from gym_tttt.envs.TradingEnv_02 import TradingEnv_02
+from gym_tttt.envs.TradingEnv_03 import TradingEnv_03
+
+# New geeneration

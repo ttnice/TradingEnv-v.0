@@ -22,12 +22,12 @@ import pandas_datareader as web
 df = web.DataReader('AAPL', data_source='yahoo', start='2012-01-01', end='2019-12-17')
 df = df.reset_index()
 
-class Env_(gym.Env):
+class TradingEnv_03(gym.Env):
     """A stock trading environment for OpenAI gym"""
     metadata = {'render.modes': ['human']}
 
     def __init__(self, df=df):
-        super(Env_, self).__init__()
+        super(TradingEnv_03, self).__init__()
 
         self.df = df
         self.SCALER = MinMaxScaler()

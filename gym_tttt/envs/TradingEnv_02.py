@@ -21,12 +21,12 @@ RANKING = [30, 20, 10]
 MAX_STEPS = 60
 
 
-class Env(gym.Env):
+class TradingEnv_02(gym.Env):
     """A stock trading environment for OpenAI gym"""
     metadata = {'render.modes': ['human']}
 
     def __init__(self, df):
-        super(Env_, self).__init__()
+        super(TradingEnv_02, self).__init__()
 
         self.df = df
         self.SCALER = MinMaxScaler().fit([[1.08], [1.165]])

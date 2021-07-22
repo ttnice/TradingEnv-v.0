@@ -1,19 +1,19 @@
 from gym.envs.registration import register
 
 register(
-    id='foo-v0',
-    entry_point='gym_tttt.envs:FooEnv',
+    id='TradingEnv_00-v0',
+    entry_point='gym_tttt.envs:TradingEnv_00',
 )
 register(
-    id='test-v0',
-    entry_point='gym_tttt.envs:StockTradingEnv',
+    id='TradingEnv_01-v0',
+    entry_point='gym_tttt.envs:TradingEnv_01',
 )
 register(
-    id='env-v0',
-    entry_point='gym_tttt.envs:Env',
+    id='TradingEnv_02-v0',
+    entry_point='gym_tttt.envs:TradingEnv_02',
 )
 register(
-    id='env_-v0',
-    entry_point='gym_tttt.envs:Env_',
+    id='TradingEnv_03-v0',
+    entry_point='gym_tttt.envs:TradingEnv_03',
 )
 

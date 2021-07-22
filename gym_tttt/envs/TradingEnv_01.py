@@ -2,12 +2,12 @@ import gym
 from gym import spaces
 
 
-class FooEnv(gym.Env):
+class TradingEnv_01(gym.Env):
     """A stock trading environment for OpenAI gym"""
     metadata = {'render.modes': ['human']}
 
     def __init__(self):
-        super(FooEnv, self).__init__()
+        super(TradingEnv_01, self).__init__()
 
         self.reward_range = (0, 500)
 
